@@ -73,7 +73,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="FreshMvvm.Maui" Version="0.0.4" />
-	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.4.42" />
+	  <PackageReference Include="Syncfusion.Maui.ListView" Version="*" />
 	</ItemGroup>
 
 	<ItemGroup>
