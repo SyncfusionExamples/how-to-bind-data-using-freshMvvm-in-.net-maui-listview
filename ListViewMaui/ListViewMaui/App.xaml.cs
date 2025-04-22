@@ -7,9 +7,12 @@ public partial class App : Application
 	public App()
 	{
 		InitializeComponent();
+    }
+
+    protected override Window CreateWindow(IActivationState activationState)
+    {
         var page = FreshPageModelResolver.ResolvePageModel<ListViewPageModel>();
         var basicNavContainer = new FreshNavigationContainer(page);
-        MainPage = basicNavContainer;
-
+        return new Window(basicNavContainer);
     }
 }
